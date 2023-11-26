@@ -1,11 +1,11 @@
 class Star {
   private int myX, myY;
   public Star() {
-    myX = ((int)(Math.random()*500));
-    myY = ((int)(Math.random()*500));
+    myX = ((int)(Math.random()*1001));
+    myY = ((int)(Math.random()*1001));
   }
   public void show() {
     fill((int)(Math.random()*255));
-    ellipse(myX, myY, 5, 5);
+    ellipse(myX, myY, ((int)(Math.random()*10)), ((int)(Math.random()*10)));
   }
 }
