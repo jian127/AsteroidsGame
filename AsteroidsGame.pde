@@ -1,17 +1,17 @@
 Spaceship bob = new Spaceship();
-Star[] nightSky = new Star[200];
+Star[] sky = new Star[200];
 public void setup() {
   size(400, 400);
-  for (int i = 0; i < nightSky.length; i++) {
-    nightSky[i] = new Star();
+  for (int i = 0; i < sky.length; i++) {
+    sky[i] = new Star();
   }
 }
 public void draw() {
   background(0);
   bob.show();
   bob.move();
-  for (int i = 0; i < nightSky.length; i++) {
-    nightSky[i].show();
+  for (int i = 0; i < sky.length; i++) {
+   sky[i].show();
     fill(255);
   }
 }
