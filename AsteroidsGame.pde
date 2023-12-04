@@ -1,9 +1,13 @@
-Spaceship bob = new Spaceship();
-Star[] sky = new Star[300];
+private Spaceship bob = new Spaceship();
+private Star[] sky = new Star[300];
+private ArrayList <Asteroid> cl = new ArrayList<Asteroid>();
 public void setup() {
   size(1000, 1000);
   for (int i = 0; i < sky.length; i++) {
     sky[i] = new Star();
+  }
+  for(int i = 0; i < 50; i++){
+    cl.add(new Asteroid());
   }
 }
 public void draw() {
@@ -14,6 +18,11 @@ public void draw() {
    sky[i].show();
     fill(255);
   }
+  for(int i = 0; i < 50;i++){
+   cl.get(i).show();
+    cl.get(i).move();
+  }
+    
 }
 public void keyPressed() {
   if (key == 'w') {
