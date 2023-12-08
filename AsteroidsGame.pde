@@ -18,9 +18,16 @@ public void draw() {
    sky[i].show();
     fill(255);
   }
-  for(int i = 0; i < 50;i++){
+  for(int i = 0; i < 50 ;i++){
    cl.get(i).show();
     cl.get(i).move();
+     
+    
+    float d = dist((float)bob.getX(), (float)bob.getY(), (float)cl.get(i).getX(), (float)cl.get(i).getY());
+    if(d<13){
+    cl.remove(i);
+    i--;
+    }
   }
     
 }
