@@ -44,8 +44,8 @@ public void keyPressed() {
   if (key == 's') {
     bob.setXspeed(0);
     bob.setYspeed(0);
-    bob.turn((int)(Math.random()*300+100));
-    bob.setXCenter((int)(Math.random()*300+100));
-    bob.setYCenter((int)(Math.random()*300+100));
+    bob.turn(int)(Math.random()*300+100);
+    bob.setXCenter(int)(Math.random()*300+100);
+    bob.setYCenter(int)(Math.random()*300+100);
   }
 }
