@@ -6,7 +6,7 @@ public void setup() {
   for (int i = 0; i < sky.length; i++) {
     sky[i] = new Star();
   }
-  for(int i = 0; i < 50; i++){
+  for(int i = 0; i < 100; i++){
     cl.add(new Asteroid());
   }
 }
@@ -18,7 +18,7 @@ public void draw() {
    sky[i].show();
     fill(255);
   }
-  for(int i = 0; i < 50 ;i++){
+  for(int i = 0; i < 25 ;i++){
    cl.get(i).show();
     cl.get(i).move();
      
