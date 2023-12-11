@@ -6,7 +6,7 @@ public void setup() {
   for (int i = 0; i < sky.length; i++) {
     sky[i] = new Star();
   }
-  for(int i = 0; i < 100; i++){
+  for(int i = 0; i < 25; i++){
     cl.add(new Asteroid());
   }
 }
