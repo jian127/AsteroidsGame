@@ -1,5 +1,5 @@
  Spaceship bob = new Spaceship();
- Star[] sky = new Star[300];
+ Star[] sky = new Star[60];
  ArrayList<Asteroid> cl =new ArrayList<Asteroid>();
 public void setup() {
   size(1000, 1000);
