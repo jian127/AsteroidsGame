@@ -18,7 +18,7 @@ public void draw() {
    sky[i].show();
     fill(255);
   }
-  for(int i = 0; i < 25 ;i++){
+  for(int i = 0; i < cl.size() ;i++){
    cl.get(i).show();
     cl.get(i).move();
      
