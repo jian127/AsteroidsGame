@@ -1,12 +1,12 @@
- Spaceship bob = new Spaceship();
- Star[] sky = new Star[60];
- ArrayList<Asteroid> cl =new ArrayList<Asteroid>();
+Spaceship bob = new Spaceship();
+ Star[] sky = new Star[75];
+ ArrayList<Asteroid> cl = new ArrayList<Asteroid>();
 public void setup() {
   size(1000, 1000);
   for (int i = 0; i < sky.length; i++) {
     sky[i] = new Star();
   }
-  for(int i = 0; i < 25; i++){
+  for (int i = 0; i < 25; i++) {
     cl.add(new Asteroid());
   }
 }
@@ -15,37 +15,36 @@ public void draw() {
   bob.show();
   bob.move();
   for (int i = 0; i < sky.length; i++) {
-   sky[i].show();
+    sky[i].show();
     fill(255);
   }
-  for(int i = 0; i < cl.size() ;i++){
-   cl.get(i).show();
+  for (int i = 0; i < cl.size(); i++) {
+    cl.get(i).show();
     cl.get(i).move();
-     
     
+
     float d = dist((float)bob.getX(), (float)bob.getY(), (float)cl.get(i).getX(), (float)cl.get(i).getY());
-    if(d<13){
-    cl.remove(i);
-    i--;
+    if (d<13) {
+      cl.remove(i);
+      i--;
     }
   }
-    
 }
 public void keyPressed() {
   if (key == 'w') {
     bob.accelerate(1);
   }
   if (key == 'a') {
-    bob.turn(-10);
+    bob.turn(-10 );
   }
   if (key == 'd') {
-    bob.turn(10);
+    bob.turn(10 );
   }
   if (key == 's') {
     bob.setXspeed(0);
     bob.setYspeed(0);
-    bob.turn(int)(Math.random()*300+100);
-    bob.setXCenter(int)(Math.random()*300+100);
-    bob.setYCenter(int)(Math.random()*300+100);
+    bob.turn((int)(Math.random()*300+100));
+    bob.setXCenter((int)(Math.random()*300+100));
+    bob.setYCenter((int)(Math.random()*300+100));
   }
 }
