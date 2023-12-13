@@ -2,7 +2,7 @@ Spaceship bob = new Spaceship();
  Star[] sky = new Star[75];
  ArrayList<Asteroid> cl = new ArrayList<Asteroid>();
 public void setup() {
-  size(1000, 1000);
+  size(500, 500);
   for (int i = 0; i < sky.length; i++) {
     sky[i] = new Star();
   }
