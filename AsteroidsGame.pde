@@ -22,7 +22,7 @@ sky[i] = new Star();
 }
 public void draw()
 {
-background(0);
+background(231,84,128);
 bob.show();
 bob.move();
 for(int i = 0; i < sky.length; i++){
