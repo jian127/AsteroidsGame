@@ -4,7 +4,7 @@ class Bullets extends Floater {
     myCenterY = bob.getY();
     myPointDirection = bob.getDirection();
     accelerate(0.6);
-    myColor = color(0, 0, 0);
+    myColor = color(255,193,203);
   }
   public void show() {
     fill(myColor);
@@ -24,4 +24,3 @@ class Bullets extends Floater {
     return myCenterY;
   }
 }
-
